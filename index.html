@@ -505,7 +505,9 @@
                     <button type="submit" class="subscribe-button">
                       Subscribe
                       <svg class="subscribe-icon" width="24" height="24">
-                        <use xlink:href="./images/icons.svg#icon-send"></use>
+                        <use
+                          xlink:href="./images/icons.svg#icon-icon-send"
+                        ></use>
                       </svg>
                     </button>
                   </div>
@@ -521,70 +523,76 @@
   <div class="modal-overlay">
     <div class="modal">
       <div class="button-field">
-        <button class="close-button">
-          <svg class="icon-inner">
+        <button class="close-button" type="button">
+          <svg height="8" width="8" class="icon-close">
             <use xlink:href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
       <p class="modal-comment">Leave your contacts and we will call you back</p>
-      <div class="input-field">
-        <form action="#" class="form-field">
-          <div class="fields">
-            <label for="name-input" class="input-title">Name</label>
-            <div class="icon-box">
-              <svg class="input-icon">
-                <use xlink:href="./images/icons.svg#icon-user"></use>
-              </svg>
-              <input
-                type="text"
-                id="name-input"
-                name="user-name"
-                class="modal-input-field"
-              />
-            </div>
+
+      <form action="#" class="form-field">
+        <div class="fields">
+          <label class="input-title" for="user-name">Name</label>
+          <div class="icon-box">
+            <input
+              class="modal-input-field"
+              name="user-name"
+              id="user-name"
+              type="text"
+            />
+            <svg height="16" width="16" class="input-icon">
+              <use xlink:href="./images/icons.svg#icon-user"></use>
+            </svg>
           </div>
-          <div class="fields">
-            <label for="phone-input" class="input-title">Phone</label>
-            <div class="icon-box">
-              <svg class="input-icon">
-                <use xlink:href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <input
-                type="tel"
-                id="phone-input"
-                name="phone"
-                class="modal-input-field"
-              />
-            </div>
+        </div>
+        <div class="fields">
+          <label class="input-title" for="user-phone">Phone</label>
+          <div class="icon-box">
+            <input
+              class="modal-input-field"
+              name="user-phone"
+              id="user-phone"
+              type="text"
+            />
+            <svg height="16" width="16" class="input-icon">
+              <use xlink:href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
-          <div class="fields">
-            <label for="email-input" class="input-title">Email</label>
-            <div class="icon-box">
-              <svg class="input-icon">
-                <use xlink:href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              <input
-                type="email"
-                id="email-input"
-                name="email"
-                class="modal-input-field"
-              />
-            </div>
+        </div>
+        <div class="fields">
+          <label class="input-title" for="user-email">Email</label>
+          <div class="icon-box">
+            <input
+              class="modal-input-field"
+              name="user-email"
+              id="user-email"
+              type="text"
+            />
+            <svg height="16" width="16" class="input-icon">
+              <use xlink:href="./images/icons.svg#icon-mail"></use>
+            </svg>
           </div>
-          <div class="fields">
-            <label for="comment-input" class="input-title">Comment</label>
-            <div class="feedback-box">
-              <textarea
-                type="text"
-                id="comment-input"
-                name="feedback"
-                class="input-comment"
-              ></textarea>
-            </div>
+        </div>
+        <div class="comment-fields">
+          <label class="input-title" for="comment-input">Comment</label>
+          <div class="feedback-box">
+            <textarea
+              type="text"
+              id="comment-input"
+              name="comment-input"
+              class="input-comment"
+            ></textarea>
           </div>
-        </form>
-      </div>
+        </div>
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox-input" />
+          I accept the terms and conditions of the<span class="span-checkbox"
+            >Privacy Policy</span
+          >
+        </label>
+        <button class="send-button">Send</button>
+      </form>
     </div>
   </div>
 </html>
