@@ -554,7 +554,7 @@ ul {
   height: 80px;
   width: 264px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
